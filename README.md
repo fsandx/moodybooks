@@ -1,2 +1,2 @@
 # moodybooks
-Data science project
+Exploring segmentation of books by reviews
