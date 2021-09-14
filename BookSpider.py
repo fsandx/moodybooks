@@ -16,7 +16,7 @@ class BookSpider(scrapy.Spider):
     def parse(self, response):
         for books in response.css('div.article-body-commercial-selector'):
             node = 0
-            for nr in range(1, 100):
+            for nr in range(1, 101):
                 node += 1
                 yield{
                     'number': books.xpath('h2[{}]/text()'.format(node)).get(),
