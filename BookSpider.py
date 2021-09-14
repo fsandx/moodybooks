@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Sep 13 13:47:56 2021
+Start with: scrapy runspider BookSpider.py -O data/books.json
 
-@author: fred
-https://docs.scrapy.org/en/latest/intro/overview.html
-Started with: scrapy runspider BookSpider.py -O books.json
-
-/html/body/article/div/div/div[9]/main/main/div[1]/div/p[3]/em[2]/a
 """
 
 import scrapy
@@ -23,8 +18,6 @@ class BookSpider(scrapy.Spider):
             node = 0
             for nr in range(1, 100):
                 node += 1
-                
-            #for url in books.css('a::attr(href)'):
                 yield{
                     'number': books.xpath('h2[{}]/text()'.format(node)).get(),
                     'title': books.xpath('h2[{}]/strong/text()'.format(node + 1)).get(),
