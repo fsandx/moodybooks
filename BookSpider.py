@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+STEP 1
+Retrieves data (review url, title, author) from the main list of books
+and stores it in a json file
 Start with: scrapy runspider BookSpider.py -O data/books.json
-
 """
 
 import scrapy

@@ -1,23 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+STEP 3: Loading the json file, finding all the corresponding local html files, parsing the html and 
+merging the data into a reviews.json 
 Start with: scrapy runspider ReviewsParser.py -O data/reviews.json
-main artcile: //*[@id="maincontent"]
-intro: /html/body/article/div/div/div[5]/div
-author: /html/body/article/div/div/div[8]/div/div/div/div[1]/div/address/div/a
-date: /html/body/article/div/div/div[8]/div/div/div/div[1]/div/div
-
-sel = response.xpath(//*[@id="maincontent"])
-''.join(selector.select("//body//text()").extract()).strip()
-
-
 """
 
 import scrapy
 from bs4 import BeautifulSoup
 import json
 import os
-#/home/fred/dev/mda512/moodybooks/data/reviews/wolf-hall-hilary-mantel.html
 
 LOCAL_FOLDER = 'moodybooks/data/reviews'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +23,6 @@ class ReviewsParser(scrapy.Spider):
         with open("data/books.json") as f:
             self.data = json.load(f)
             for item in self.data:
-                #print(item['url'])
                 if (item['url'] is not None):
                     url = f"file://{BASE_DIR}/{LOCAL_FOLDER}/" + item['url'].split("/")[-1] + '.html'
                     yield scrapy.Request(
@@ -41,8 +32,7 @@ class ReviewsParser(scrapy.Spider):
 
 
     def parse(self, response):
-    # print(response.url)
-        #article = response.xpath('//*[@id="maincontent"]/text()').get()
+ 
         soup = BeautifulSoup(response.body, "lxml") 
 
         # kill all script and style elements

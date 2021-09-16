@@ -1,16 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+STEP 2
+Takes the list of urls in the json files and downloads the html files to local drive
 Start with: scrapy runspider ReviewsCollector.py
-
-main artcile: //*[@id="maincontent"]
-intro: /html/body/article/div/div/div[5]/div
-author: /html/body/article/div/div/div[8]/div/div/div/div[1]/div/address/div/a
-date: /html/body/article/div/div/div[8]/div/div/div/div[1]/div/div
-
-sel = response.xpath(//*[@id="maincontent"])
-''.join(selector.select("//body//text()").extract()).strip()
-
 
 """
 
@@ -26,7 +19,6 @@ class ReviewsCollector(scrapy.Spider):
         with open("data/books.json") as f:
             self.data = json.load(f)
             for item in self.data:
-                print(item['url'])
                 if (item['url'] is not None):
                     yield scrapy.Request(url=item['url'], headers={'Referer':'http://www.google.com/'}, callback=self.parse)
 
