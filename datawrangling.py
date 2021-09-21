@@ -28,8 +28,8 @@ class WordCounter:
             rwords = row['text'].split()
             t = row['title']
             bid = row['number']
-            data = [str(bid)]
-            columns = ['Book Id']
+            data = [str(bid), len(rwords) ]
+            columns = ['Book Id', 'Text Size']
             for mw in self.words:
                 c = rwords.count(mw)
                 if (c > 0):
