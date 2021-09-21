@@ -11,9 +11,6 @@ import scrapy
 import json
 
 class ReviewsCollector(scrapy.Spider):
-    name = 'books'
-    urls = [
-    ]
 
     def start_requests(self):
         with open("data/books.json") as f:

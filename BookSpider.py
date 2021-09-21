@@ -10,7 +10,6 @@ Start with: scrapy runspider BookSpider.py -O data/books.json
 import scrapy
 
 class BookSpider(scrapy.Spider):
-    name = 'books'
     start_urls = [
         'https://www.theguardian.com/books/2019/sep/21/best-books-of-the-21st-century',
     ]

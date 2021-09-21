@@ -15,9 +15,6 @@ LOCAL_FOLDER = 'moodybooks/data/reviews'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class ReviewsParser(scrapy.Spider):
-    name = 'books'
-    urls = [
-    ]
 
     def start_requests(self):
         with open("data/books.json") as f:
@@ -26,20 +23,18 @@ class ReviewsParser(scrapy.Spider):
                 if (item['url'] is not None):
                     url = f"file://{BASE_DIR}/{LOCAL_FOLDER}/" + item['url'].split("/")[-1] + '.html'
                     yield scrapy.Request(
-                        url=url,
-                        meta={'number': item['number'], 'author': item['author'], 'title': item['title'], 'remote_url': item['url']},
-                        callback=self.parse)
+                            url=url,
+                            meta={'number': item['number'], 'author': item['author'], 'title': item['title'], 'remote_url': item['url']},
+                            callback=self.parse)
 
 
     def parse(self, response):
  
         soup = BeautifulSoup(response.body, "lxml") 
 
-        # kill all script and style elements
         for script in soup(["script", "style"]):
-            script.extract()    # rip it out
+            script.extract()
 
-        # get text
         text = soup.get_text()
 
         # break into lines and remove leading and trailing space on each
