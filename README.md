@@ -1,5 +1,6 @@
 # moodybooks
-Exploring segmentation of books by reviews
+Exploring a moody classification of books, by analyzing reviews.
+BookSpider.py - used for collecting 
 
 ## Visualisation 1: Most occuring mood word
 ```python
@@ -22,10 +23,11 @@ How many words in total (and how many occurences) do we need in a review for the
 [Code for the graph](visualisation2.ipynb) with [Jupyter](https://jupyter.readthedocs.io), by the assistance from [Seaborn](https://seaborn.pydata.org/).
 
 
-## Visualisation 3: Percentage of books with occurences
+## Visualisation 3: List of top moody books
+![Alt text](screenshots/visualisation3-list.png?raw=true "Visualisation 3: List of top moody books")
+![Alt text](screenshots/visualisation3.png?raw=true "Visualisation 3: Plotted titles")
 
-
-## Visualisation Count / List books in each mood genre
+## Visualisation 4: List books in each mood genre
 
 
 ## Data wrangling
