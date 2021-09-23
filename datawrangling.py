@@ -10,8 +10,8 @@ RESULT_PATH = 'data/moodywords_result.csv'
 
 WORDS_HAPPY = ['happy','playful', 'aroused', 'cheeky', 'content', 'free', 'joyful', 'interested', 'curious', 'inquisitive', 'proud', 'successful', 'confident', 'accepted', 'respected', 'valued', 'powerful', 'courageous', 'creative', 'peaceful', 'loving', 'thankful', 'trusting', 'sensitive', 'intimate', 'optimistic', 'hopeful', 'inspired']
 WORDS_SAD = ['sad', 'lonely', 'isolated', 'abandoned', 'vulnerable', 'victimized', 'fragile', 'despair', 'grief', 'powerlesss', 'hurt', 'embarrassed', 'depressed', 'inferior', 'empty', 'guilty', 'ashamed', 'remorseful']
-WORDS_DISGUSTED = ['disgusted', 'disapproving', 'judgemental', 'disappointed', 'appalled', 'revolted', 'awful', 'nauseated', 'detestable', 'repelled', 'hesitant', 'angry']
-WORDS_ANGRY = ['let down', 'betrayed', 'humiliated', 'disrespected', 'ridiculed', 'bitter', 'indignant', 'violated', 'mad', 'furious', 'jealous', 'aggressive', 'provoked', 'hostile', 'frustrated', 'infuriated', 'annoyed', 'distant', 'withdrawn', 'numb', 'critical', 'skeptical', 'dismissive']
+WORDS_DISGUSTED = ['disgusted', 'disapproving', 'judgemental', 'disappointed', 'appalled', 'revolted', 'awful', 'nauseated', 'detestable', 'repelled', 'hesitant']
+WORDS_ANGRY = ['angry','let down', 'betrayed', 'humiliated', 'disrespected', 'ridiculed', 'bitter', 'indignant', 'violated', 'mad', 'furious', 'jealous', 'aggressive', 'provoked', 'hostile', 'frustrated', 'infuriated', 'annoyed', 'distant', 'withdrawn', 'numb', 'critical', 'skeptical', 'dismissive']
 WORDS_FEARFUL = ['fearful', 'scared', 'helpless', 'frightened', 'anxious', 'overwhelmed', 'worried', 'insecure', 'inadequate', 'inferior', 'weak', 'worthless', 'insignificant', 'rejected', 'excluded', 'persecuted', 'threatened', 'nervous', 'exposed']
 WORDS_BAD = ["bad","bored","busy","stressed","tired","indifferent","apathetic","pressured","rushed","out of control","sleepy","unfocused"]
 WORDS_SURPRISED = ["surprised","startled","confused","amazed","excited","shocked","dismayed","disillusioned","perplexed","astonished",'awe',"eager","energetic"]

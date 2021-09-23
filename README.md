@@ -13,14 +13,19 @@ The number of hits can be increased by adding **synonyms** and **exclude suffixe
 
 [Code for the graph](visualisation1.ipynb) with [Jupyter](https://jupyter.readthedocs.io), by the assistance from [Seaborn](https://seaborn.pydata.org/).
 
-## Visualisation 2: Proportion of occurences to number of words
-Add column for wordcount, in result. 
-How many words in total (and how many occurences) do we need in a review to be useful/reliable
+## Visualisation 2: Relation between review length and number of word hits
+A linear regression plot, showing how a length of a review text effects the number of occurences of moody word.
+The greater the length the larger the variety. 
+How many words in total (and how many occurences) do we need in a review for the classification to be useful/relevant?
+![Alt text](screenshots/visualisation2-chart.png?raw=true "Visualisation 2: Relation between review length and number of word hits")
+
+[Code for the graph](visualisation2.ipynb) with [Jupyter](https://jupyter.readthedocs.io), by the assistance from [Seaborn](https://seaborn.pydata.org/).
+
 
 ## Visualisation 3: Percentage of books with occurences
 
 
-## List books in each mood genre
+## Visualisation Count / List books in each mood genre
 
 
 ## Data wrangling
