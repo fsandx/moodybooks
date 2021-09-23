@@ -1,0 +1,209 @@
+{
+   "source": "https://blog.calm.com/blog/the-feelings-wheel",
+   "words": {
+      "happy": [
+         {
+            "playful": [
+               "aroused",
+               "cheeky"
+            ]
+         },
+         {
+            "content": [
+               "free",
+               "joyful"
+            ]
+         },
+         {
+            "interested": [
+               "curious",
+               "inquisitive"
+            ]
+         },
+         {
+            "proud": [
+               "successful",
+               "confident"
+            ]
+         },
+         {
+            "accepted": [
+               "respected",
+               "valued"
+            ]
+         },
+         {
+            "powerful": [
+               "courageous",
+               "creative"
+            ]
+         },
+         {
+            "peaceful": [
+               "loving",
+               "thankful"
+            ]
+         },
+         {
+            "trusting": [
+               "sensitive",
+               "intimate"
+            ]
+         },
+         {
+            "optimistic": [
+               "hopeful",
+               "inspired"
+            ]
+         }
+      ],
+      "sad": [
+         {
+            "lonely": [
+               "isolated",
+               "abandoned"
+            ]
+         },
+         {
+            "vulnerable": [
+               "victimized",
+               "fragile"
+            ]
+         },
+         {
+            "despair": [
+               "grief",
+               "powerlesss"
+            ]
+         },
+         {
+            "hurt": [
+               "embarrassed"
+            ]
+         },
+         {
+            "depressed": [
+               "inferior",
+               "empty"
+            ]
+         },
+         {
+            "guilty": [
+               "ashamed",
+               "remorseful"
+            ]
+         }
+      ],
+      "disgusted": [
+         {
+            "disapproving": [
+               "judgemental"
+            ]
+         },
+         {
+            "disappointed": [
+               "appalled",
+               "revolted"
+            ]
+         },
+         {
+            "awful": [
+               "nauseated",
+               "detestable"
+            ]
+         },
+         {
+            "repelled": [
+               "hesitant"
+            ]
+         }
+      ],
+      "angry": [
+         {
+            "let down": [
+               "betrayed"
+            ]
+         },
+         {
+            "humiliated": [
+               "disrespected",
+               "ridiculed"
+            ]
+         },
+         {
+            "bitter": [
+               "indignant",
+               "violated"
+            ]
+         },
+         {
+            "mad": [
+               "furious",
+               "jealous"
+            ]
+         },
+         {
+            "aggressive": [
+               "provoked",
+               "hostile"
+            ]
+         },
+         {
+            "frustrated": [
+               "infuriated",
+               "annoyed"
+            ]
+         },
+         {
+            "distant": [
+               "withdrawn",
+               "numb"
+            ]
+         },
+         {
+            "critical": [
+               "skeptical",
+               "dismissive"
+            ]
+         }
+      ],
+      "fearful": [
+         {
+            "scared": [
+               "helpless",
+               "frightened"
+            ]
+         },
+         {
+            "anxious": [
+               "overwhelmed",
+               "worried"
+            ]
+         },
+         {
+            "insecure": [
+               "inadequate",
+               "inferior"
+            ]
+         },
+         {
+            "weak": [
+               "worthless",
+               "insignificant"
+            ]
+         },
+         {
+            "rejected": [
+               "excluded",
+               "persecuted"
+            ]
+         },
+         {
+            "threatened": [
+               "nervous",
+               "exposed"
+            ]
+         }
+      ]
+   }
+}
